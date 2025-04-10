@@ -1,0 +1,6 @@
+.root {
+  padding: 8px;
+  font-size: 12px;
+  font-family: Roboto Mono, monospace;
+  color: var(--color-white);
+}

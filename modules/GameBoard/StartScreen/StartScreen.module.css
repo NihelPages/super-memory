@@ -1,0 +1,58 @@
+.root {
+  --option-color: white;
+  --option-active-color: white;
+
+  text-align: center;
+  padding-top: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.options_container {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .options_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.option {
+  background-color: transparent;
+  color: white;
+  border: solid 1px var(--option-color);
+  max-width: 200px;
+  height: 100px;
+  min-width: 150px;
+
+  padding: 1.2rem;
+  text-decoration: none;
+  display: inline-box;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.option:hover,
+.option:focus,
+.option:active {
+  outline: 0;
+  color: var(--option-active-color);
+  border-color: var(--option-active-color);
+}
+
+@media (max-width: 600px) {
+  .option {
+    width: 100%;
+  }
+}

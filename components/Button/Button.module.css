@@ -1,0 +1,46 @@
+.root {
+  --button-color: white;
+  --button-active-color: white;
+
+  color: var(--button-color);
+  border: solid 1px var(--button-color);
+
+  display: inline-block;
+
+  margin: 6px 8px;
+
+  line-height: 1;
+  min-height: 2.5rem;
+  padding: 0.75rem 1.25rem;
+
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 400;
+  background: transparent;
+
+  min-width: 64px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+
+  text-transform: uppercase;
+}
+
+.root:hover,
+.root:focus,
+.root:active {
+  color: var(--button-active-color);
+  border-color: var(--button-active-color);
+}
+
+.color_primary {
+  --button-color: var(--color-yellow);
+  --button-active-color: var(--color-yellow-light);
+}
+
+.color_secondary {
+  --button-color: var(--color-white);
+  --button-active-color: var(--color-white-light);
+}

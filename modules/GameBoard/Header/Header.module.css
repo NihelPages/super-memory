@@ -1,0 +1,19 @@
+.message_info {
+  text-align: center;
+  color: var(--color-white);
+}
+
+.message_error {
+  text-align: center;
+  color: var(--color-error);
+}
+
+.message_success {
+  text-align: center;
+  color: var(--color-success);
+}
+
+.board_actions {
+  display: flex;
+  justify-content: flex-end;
+}
