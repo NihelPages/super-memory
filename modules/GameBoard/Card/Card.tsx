@@ -34,19 +34,16 @@ export const Card: React.FC<CardProps> = ({ gameState, value, isVisible, onClick
       className={styles.root}
       data-testid={`Card/${value}/${isVisible ? 'front' : 'back'}`}
     >
-      <animated.div
-        // eslint-disable-next-line
+       <animated.div
         className={cx(
           styles.animated_container,
-          gameState === GAME_STATE.TURN_LOST ? styles.back_error : styles.back,
+          gameState === GAME_STATE.TURN_WON ? styles.success : styles.back,
         )}
         style={{
           opacity: opacity.interpolate((o) => 1 - o),
           transform,
         }}
       />
-
-      {/* eslint-disable-next-line */}
       <animated.div
         className={cx(
           styles.animated_container,

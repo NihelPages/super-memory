@@ -21,6 +21,7 @@ pnpm dev
 
 ## Todo
 
+- [ ] fix card styling and animation
 - [ ] add how to play first screen
 - [ ] add analytics
 - [ ] fix linting and formating
